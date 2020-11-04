@@ -1,0 +1,122 @@
+@media only screen and (max-width: 480px){
+  .mc-col{
+  	flex: 0 0 100%;
+	max-width: 100%;
+	width: 100%;
+  }
+
+  h3{
+  	margin: 0 0 0 0;
+  }
+
+  .img-h-249 a{
+  	height: 100%;
+  }
+
+  .img-mb-h{
+  	height: 100% !important;
+  	object-fit: cover;
+  }
+
+  .img-h-200{
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  .img-h-240{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .cate-img{
+    width: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+/*  .img-res-h-400{
+    height: 400px !important;
+    object-fit: cover;
+    object-position: center;
+  }*/
+  .img-res-h-250{
+    height: 250px !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  .newsletter-email{
+    width: 100% !important;
+  }
+  .img-h-585{
+    width: 400px !important;
+  }
+ 
+}
+
+/*@media only screen and (min-width: 769px){
+  .elementor-element-c314cd2{
+    margin: 100px 0 !important;
+    width: 1903px !important;
+    left: -388.5px !important;
+    background-color: #dfd9d9;
+  }
+
+  .elementor-element-c314cd2 .elementor-column-wrap{
+    background-color: #dfd9d9;
+    height: 340px;
+  }
+
+  .elementor-element-c314cd2 .elementor-column-wrap .elementor-widget-wrap{
+    padding: 40px 0;
+  }
+}*/
+
+@media only screen and (max-width: 1199px){
+  .img-h-585{
+    height: 800px !important;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .mc-col-5{
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  .mc-col-4{
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;`
+  }
+  .mc-col-3{
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  .img-h-249{
+    height: auto;
+  }
+  .img-h-492{
+    height: auto;
+  }
+  .img-h-250{
+    width: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    height: auto !important;
+  }
+  .img-mh-4{
+    height: auto;
+  }
+  .img-h-240{
+    height: auto !important;
+  }
+  .img-res-h-250{
+    height: auto !important;
+  }
+  .img-h-248{
+    height: auto !important;
+  }
+}
