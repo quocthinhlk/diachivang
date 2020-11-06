@@ -25,7 +25,7 @@
 										<div class="blog-bottom-content-holder">
 											<ul>
 												<li><span><i class="fa fa-user" aria-hidden="true"></i></span><a href="" title="Posts by <?php echo get_the_author() ?>" rel="author"><?php echo get_the_author() ?></a></li>
-												<li><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo get_the_date(); ?></li>
+												<li><i class="fas fa-clock"></i><?php echo get_the_date(); ?></li>
 											</ul>
 											<h3>
 												<a href=""><?php the_title(); ?></a>

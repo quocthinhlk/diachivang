@@ -1,10 +1,6 @@
 <?php
 /**
  * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package demo
  */
 
 get_header();
@@ -13,14 +9,13 @@ get_header();
 <div id="meanmenu" ></div>		
 <div id="header-area-space"></div>
 <?php get_template_part('views/sections/sidebar-bottom'); ?>
-
 <main id="primary" class="site-main">
 
 	<?php
 	while ( have_posts() ) :
 		the_post(); ?>
-
-		<div class="entry-banner" style="background:url(https://www.radiustheme.com/demo/wordpress/themes/barta/wp-content/themes/barta/assets/img/banner.jpg) no-repeat scroll center center / cover">
+		<?php $banner = get_field('banner_single_page', 'option'); ?>
+		<div class="entry-banner" style="background:url(<?php echo esc_url($banner['url']); ?>) no-repeat scroll center center / cover">
 			<div class="container">
 				<div class="entry-banner-content">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -104,70 +99,73 @@ get_header();
 								<div class="item-tags">
 									<span>Tags:</span>
 									<ul class="tag_styles">
-										<li><a href="" rel="tag"><?php get_the_tags() ?></a></li>
+										<li><a href="" rel="tag"><?php //get_the_tags() ?></a></li>
 									</ul>			
 								</div>
 							</div>
 						</div> -->
 
-
+						
 						<div class="post-share-area post-footer-share">
-							<p>You can share this post!</p><?php the_field('facebook'); ?>
-							<div class="post-footer">
-								<div class="share-links ">
-									<a href="<?php echo get_field('facebook', 'option'); ?>" rel="external" target="_blank" class="facebook-share-button large-share-button"><span class="fa fa-facebook"></span> <span class="social-text"></span></a>
-									<a href="<?php echo get_field('twitter', 'option'); ?>" rel="external" target="_blank" class="twitter-share-button large-share-button"><span class="fa fa-twitter"></span> <span class="social-text"></span></a>
-									<a href="<?php echo get_field('google_plus', 'option'); ?>" rel="external" target="_blank" class="google-share-button"><span class="fa fa-google"></span> <span class="screen-reader-text"></span></a>
-									<a href="<?php echo get_field('linkedin', 'option'); ?>>" rel="external" target="_blank" class="linkedin-share-button"><span class="fa fa-linkedin"></span> <span class="screen-reader-text"></span></a>
-									<!-- <a href="#" rel="external" target="_blank" class="whatsapp-share-button"><span class="fa fa-whatsapp"></span> <span class="screen-reader-text">Whatsapp</span></a> -->
-									<!-- <a href="#" rel="external" target="_blank" class="stumbleupon-share-button"><span class="fa fa-stumbleupon"></span> <span class="screen-reader-text">StumbleUpon</span></a> -->
-									<!-- <a href="#" rel="external" target="_blank" class="tumblr-share-button"><span class="fa fa-tumblr"></span> <span class="screen-reader-text">Tumblr</span></a> -->
-									<a href="<?php echo get_field('pinterest', 'option'); ?>" rel="external" target="_blank" class="pinterest-share-button"><span class="fa fa-pinterest"></span> <span class="screen-reader-text"></span></a>
-									<!-- <a href="#" rel="external" target="_blank" class="reddit-share-button"><span class="fa fa-reddit"></span> <span class="screen-reader-text">Reddit</span></a> -->
-									<!-- <a href="#" rel="external" target="_blank" class="email-share-button"><span class="fa fa-envelope"></span> <span class="screen-reader-text">Share via Email</span></a> -->
-									<a href="#" rel="external" target="_blank" class="print-share-button"><span class="fa fa-print"></span> <span class="screen-reader-text"></span></a>				
-								</div>	
+							<p>Chia sẻ bài viết</p>
+							<div class="share-social">
+								<p>
+									<a href="<?php echo get_field('facebook', 'option'); ?>" target="_blank"><i class="fab fa-facebook-square"></i></a>
+									<a href="<?php echo get_field('twitter', 'option'); ?>" target="_blank"><i class="fab fa-twitter-square"></i></i></a>
+									<a href="<?php echo get_field('google_plus', 'option'); ?>" target="_blank"><i class="fab fa-google-plus-square"></i></a>
+									<a href="<?php echo get_field('linkedin', 'option'); ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
+									
+								</p>
 							</div>
-						</div>	
-						<!-- next/prev post -->
-
-						<!-- <div class="row no-gutters divider post-navigation">
-
-							<div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
-								<i class="fa fa-angle-left" aria-hidden="true"></i>	
-								<a href="" rel="prev">Previous article</a>				
-								<h3 class="post-nav-title"><a href="" rel="prev">Vinales will be as tough for Rossi as Lorenzo – Suzuki MotoGP boss</a></h3>			
-							</div>
-							<div class=" col-lg-6 col-md-6 col-sm-6 col-6  text-right">
-								<a href="" rel="prev">Next article</a> 
-								<i class="fa fa-angle-right" aria-hidden="true"></i>
-								<h3 class="post-nav-title"><a href="" rel="next">Magical fish basically has the power to conjure its own Patronus</a></h3>			
-							</div>
-
-						</div> -->	
-
-
-						<!-- author bio -->
-						<!-- <div class="media about-author">
-							<div class="pull-left">
-								<img alt="" src="https://secure.gravatar.com/avatar/20947e665211ab91db569a6f7fbe44ac?s=105&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/20947e665211ab91db569a6f7fbe44ac?s=210&amp;d=mm&amp;r=g 2x" class="avatar avatar-105 photo" width="105" height="105">			
-							</div>
-							<div class="media-body">
-								<div class="about-author-info">
-									<div class="author-title"><a href="" title="Posts by <?php echo get_the_author() ?>" rel="author"><?php echo get_the_author() ?></a></div>
-									<div class="author-designation">administrator</div>
-								</div>
-								<div class="about-author-social">
-									<ul class="author-box-social"></ul>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>	 -->		
-
+						</div>
 						<div class="related-post">
+							<p>Bài viết liên quan</p>
+							<div class="container">
+								<div class="row">
+									<?php
+									/*
+									    Hiển thị bài viết liên quan theo post tags
+									 */
+									    $tags = wp_get_post_tags(get_the_ID());
+									    if ($tags){
+									    	$tag_ids = array();
+									    	foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
+									    	$args=array(
+									    		'tag__in' => $tag_ids,
+									    		'post__not_in' => array(get_the_ID()),
+									    		'posts_per_page' => 3,
+									    	);
+									    	$my_query = new wp_query($args);
+									    	if( $my_query->have_posts() ):
+									    		while ($my_query->have_posts()):$my_query->the_post();
+									    			?>
+									    			<div class="col-md-4 col-sm-4 col-xs-12">
+														<div class="position-relative">
+															<div class="img-scale-animate img-scale-thumb">
+																<a href=""><img class="img-thumb-relative" alt="<?php the_title(); ?>" src="<?php the_post_thumbnail_url(); ?>"></a>
+															</div>
+															<div class="rt-related-post-info">
+																<h3 class="post-title">
+																	<a href=""><?php the_title(); ?></a>
+																</h3>
+																<div class="post-date">
+																	<ul>
+																		<li><span><i class="fas fa-clock"></i></span> <?php echo get_the_date(); ?></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+									</div>
+								    				<?php
+									    		endwhile;
+									    	endif;
+									    	wp_reset_query();
+									    }
+									    ?>
 
-							<!-- <div></div> -->
-
+									
+								</div>
+							</div>
 						</div>
 
 					</div>							
@@ -184,15 +182,9 @@ get_header();
 	</div>
 
 </div>
-
-
-
-
-		<?php endwhile; // End of the loop.
+		<?php endwhile;
 		?>
-
-	</main><!-- #main -->
+	</main>
 
 	<?php
-// get_sidebar();
 	get_footer();

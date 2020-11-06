@@ -31,7 +31,7 @@
 											<div class="post-date-dark">
 												<ul>
 													<li>
-														<span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?>									
+														<span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?>									
 													</li>
 												</ul>
 											</div>

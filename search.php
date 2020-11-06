@@ -31,7 +31,7 @@
 										<div class="entry-meta">
 											<ul>
 												<li><span><i class="fa fa-user" aria-hidden="true"></i></span><?php echo get_the_author() ?></li>
-												<li><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo get_the_date( 'd-m-Y' ); ?></li>
+												<li><i class="fas fa-clock"></i></i><?php echo get_the_date( 'd-m-Y' ); ?></li>
 											</ul>
 										</div>
 										<div class="entry-content">

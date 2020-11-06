@@ -48,7 +48,7 @@ function short_code_session_2($args, $content){
 									<div class="post-meta-light">
 										<ul>
 											<li><span><i class="fa fa-user" aria-hidden="true"></i></span><a href="<?php echo get_permalink() ?>" title="Posts by <?php echo get_the_author() ?>" rel="author"><?php echo get_the_author() ?></a></li>
-											<li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+											<li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
 										</ul>
 									</div>
 									<h2 class="title-medium-light">
@@ -70,7 +70,7 @@ function short_code_session_2($args, $content){
 								<div class="media-body">
 									<div class="post-meta-dark">
 										<ul>
-											<li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+											<li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
 										</ul>
 									</div>
 									<h3 class="title-medium-dark">
@@ -136,7 +136,7 @@ function short_code_session_2($args, $content){
    							<div class="post-meta-light d-none d-sm-block">
    								<ul>
    									<li><span><i class="fa fa-user" aria-hidden="true"></i></span><a href="<?php echo get_permalink() ?>" title="Posts by <?php echo get_the_author() ?>" rel="author"><?php echo get_the_author() ?></a></li>
-   									<li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+   									<li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
    								</ul>
    							</div>
    							<h3 class="title-medium-light">
@@ -340,7 +340,7 @@ function short_code_session_2($args, $content){
 							<div class="mask-content-sm">
 								<div class="post-meta-light">
 									<ul>
-										<li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+										<li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
 									</ul>
 								</div>
 								<h2 class="title-medium-light">
@@ -365,7 +365,7 @@ function short_code_session_2($args, $content){
 								<div class="media-body">
 									<div class="post-meta-dark">
 										<ul>
-											<li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+											<li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
 										</ul>
 									</div>
 									<h3 class="title-medium-dark">
@@ -452,7 +452,7 @@ function short_code_session_7($args, $content){
                             <div class="post-meta-light">
                               <ul>
                                 <li><span><i class="fa fa-user" aria-hidden="true"></i></span><a href="<?php echo get_permalink() ?>" title="Posts by <?php echo get_the_author() ?>" rel="author"><?php echo get_the_author() ?></a></li>
-                                <li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+                                <li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
                               </ul>
                             </div>
                             <h2 class="title-medium-light">
@@ -483,7 +483,7 @@ function short_code_session_7($args, $content){
                               <div class="small-item-meta">
                                 <div class="post-meta-dark">
                                   <ul>
-                                    <li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+                                    <li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
                                   </ul>
                                 </div>
                                 <h3 class="title-medium-dark">
@@ -577,7 +577,7 @@ function short_code_session_7($args, $content){
                           <div class="post-meta-dark">
                             <ul>
                               <li><span><i class="fa fa-user" aria-hidden="true"></i></span><a href="<?php echo get_permalink() ?>" title="Posts by <?php echo get_the_author() ?>" rel="author"><?php echo get_the_author() ?></a></li>
-                              <li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+                              <li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
                             </ul>
                           </div>
                           <h3 class="title-semibold-dark size-lg mb-15">
@@ -650,7 +650,7 @@ function short_code_session_9($args, $content){
               <div class="post-meta-light">
                 <ul>
                   <li><span><i class="fa fa-user" aria-hidden="true"></i></span><a href="<?php echo get_permalink() ?>" title="Posts by <?php echo get_the_author() ?>" rel="author"><?php echo get_the_author() ?></a></li>
-                  <li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span><?php echo get_the_date(); ?></li>
+                  <li><span><i class="fas fa-clock"></i></i></span><?php echo get_the_date(); ?></li>
                 </ul>
               </div>
             </div>
